@@ -5,7 +5,7 @@ import glob
 from collections import namedtuple
 
 # headers for csv
-Line = namedtuple('Line', 'sport_id order_date order_ref_number item_description item_category item_size qty_ordered chart item_unit item_pref_vendor item_manuf item_manuf_model item_price item_serial item_expendable item_universal')
+Line = namedtuple('Line', 'sport_id order_date order_ref_number item_description item_category item_size qty_ordered item_size_chart item_unit item_pref_vendor item_manuf item_manuf_model item_price item_serial item_expendable item_universal')
 
 # identifying patterns in text using regular expressions
 manuf_model_re = re.compile(r'Item # - (.*)')
